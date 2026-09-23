@@ -36,7 +36,7 @@ app.get("/", (req, res) => {
 app.all("/api/hello", async (req, res) => {
   try {
     const upstream = await fetch(API_URL, {
-      method: "POST",
+      method: "GET",
       headers: {
         accept: "application/json, text/plain, */*",
         "accept-language": "en-IN,en;q=0.9",
